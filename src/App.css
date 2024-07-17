@@ -1,0 +1,105 @@
+@import "primereact/resources/themes/lara-light-indigo/theme.css";
+@import "primereact/resources/primereact.min.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+
+/* CustomerTable.css */
+.search-input .pi {
+  margin-right: 0.5rem !important; /* Adjust the value to add padding between the icon and the input */
+}
+
+/* !* Global styles *!**************************** */
+body {
+  background-color: #f2f4f6;
+}
+
+.icon {
+  width: 10%;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin: 20px 0;
+  font-size: 18px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link span {
+  margin-left: 10px;
+}
+
+.nav-link:hover {
+  background-color: #374151;
+  border-radius: 10px;
+  padding: 10px;
+  color: #f0bc74;
+}
+
+.nav-link svg {
+  color: #f0bc74;
+}
+
+.nav-link.active {
+  background-color: #374151;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* styles.css (or your preferred CSS file) */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table th {
+  text-align: left;
+}
+
+.table th span {
+  margin-left: 0.5rem;
+}
+
+.table input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.custom-table tbody tr {
+  background-color: #ffffff; /* Ensure rows have a white background */
+  margin-bottom: 10px; /* Add space between rows */
+}
+
+/* ! media query */
+
+@media (max-width: 801px) {
+    .navbar{
+      display: none !important;
+    }
+    .sticky-top{
+      display: flex !important;
+      align-items: center;
+      padding: 10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+  .chart{
+    height: 250px !important;
+  }
+}
